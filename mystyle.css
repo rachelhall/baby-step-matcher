@@ -134,3 +134,23 @@ p {
   .modal.open .modalInner {
     transform: translateY(0);
   }
+
+  @media only screen and (max-width: 600px) {
+      .wrapper {
+          margin: auto;
+          height: 95vh;
+      }
+      .modalInner {
+          width: 60vw;
+          margin: 10rem auto;
+          display: flex;
+          align-items: center;
+          padding:  3rem 2rem;
+      }
+
+      p {
+          padding: 40px 10px;
+          margin: 0;
+      }
+    }
+      
