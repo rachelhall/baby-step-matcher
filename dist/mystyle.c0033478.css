@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #0D4D4D;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 40vh;
+    width: 350px;
+    margin: 200px auto 400px;
+    border: 5px solid #003333;
+    background-color: #669999;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color:  #003333;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.25em;
+
+}
+
+span {
+    font-weight: 800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: start;
+    width: 200px;
+    margin-top: 15px;
+    color:  #003333;
+    
+}
+
+input, select, button {
+    margin: 5px;
+    line-height: 35px;
+    width:200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 2px solid #003333;
+    color:  #003333;
+    font-size: 1.25rem;
+}
+
+button {
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0D4D4D;
+    color: whitesmoke;
+}
+
+button, input, select:focus {
+    outline-color: #226666;
+}
+
+
+p {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;;
+    color:  #003333;
+    font-size: .85rem;
+}
+
+
+
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+  }
+
+  .modalInner {
+    border-radius: 4px;
+    background: whitesmoke;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+    transform: translateY(-100vh);
+    transition: all 0.5s;
+    width: 400px;
+    max-height: calc(30vh - 100px);
+    color: black;
+    margin: 20rem auto;
+    padding: 2rem;
+  }
+
+
+
+  .modal.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal.open .modalInner {
+    transform: translateY(0);
+  }
+
+
+/*# sourceMappingURL=/mystyle.c0033478.css.map */
