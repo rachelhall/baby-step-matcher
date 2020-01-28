@@ -63,7 +63,7 @@ function handleSubmit(e) {
    } else if (numOfFriends > 1) {
     message = `🎉Congratulations <span>${first} ${last}</span>🎉 <br>${formattedFriends2} are also in Baby Step #${step}.`;
   } else {
-     message = `None of your friends is on Baby Step #${step}`;
+     message = `None of your friends are on Baby Step #${step}`;
    }
    return message;
  }

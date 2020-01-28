@@ -177,7 +177,7 @@ function formatSentance(step, friends, first, last) {
   } else if (numOfFriends > 1) {
     message = "\uD83C\uDF89Congratulations <span>".concat(first, " ").concat(last, "</span>\uD83C\uDF89 <br>").concat(formattedFriends2, " are also in Baby Step #").concat(step, ".");
   } else {
-    message = "None of your friends is on Baby Step #".concat(step);
+    message = "None of your friends are on Baby Step #".concat(step);
   }
 
   return message;
