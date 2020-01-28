@@ -138,14 +138,14 @@ modal.addEventListener('click', handleClickOutside);
 var data = [["Dave", "Ramsey", "2"], ["Jacob", "Allen", "3"], ["Margaret", "Kloess", "2"], ["Corrine", "Rochotte", "4"], ["Jamie", "Cordair", "3"], ["Beth", "McCart", "2"]];
 
 function fullName(friend) {
-  return "".concat(friend[0], " ").concat(friend[1]);
+  return " ".concat(friend[0], " ").concat(friend[1]);
 }
 
 function getNamesString(friends) {
   var fullNames = friends.map(function (f) {
     return fullName(f);
   });
-  return fullNames.join(", ");
+  return fullNames.join(" ");
 }
 
 function getNamesString2(friends) {
@@ -154,7 +154,7 @@ function getNamesString2(friends) {
   });
   console.log(fullNames);
   var finalName = fullNames.pop();
-  return "".concat(fullNames, ", and ").concat(finalName);
+  return "".concat(fullNames, " and ").concat(finalName);
 }
 
 function getBabyFriends(step, friends, first, last) {
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49386" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61280" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

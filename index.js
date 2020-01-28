@@ -28,19 +28,19 @@ function handleSubmit(e) {
  ];
  
  function fullName(friend) {
-   return `${friend[0]} ${friend[1]}`;
+   return ` ${friend[0]} ${friend[1]}`;
  }
  
  function getNamesString(friends) {
    const fullNames = friends.map(f => fullName(f));
-   return fullNames.join(", ");
+   return fullNames.join(" ");
  }
 
  function getNamesString2(friends) {
   const fullNames = friends.map(f => fullName(f));
   console.log(fullNames);
   const finalName = fullNames.pop();
-  return `${fullNames}, and ${finalName}`
+  return `${fullNames} and ${finalName}`
 
 
 }
